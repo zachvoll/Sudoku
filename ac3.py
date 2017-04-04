@@ -22,7 +22,7 @@ def revise( bc ):
 
 def AC3 (variables, constraints):
 
-	arcs = list(constraints)
+	arcs = set(constraints)
 	while arcs:
 		bc = arcs.pop()
 		if revise( bc ):
@@ -39,12 +39,12 @@ def AC3 (variables, constraints):
 
 	return True
 
-def FC ( variables, constraints ):
-	arcs = set( constraints )
-
+def FC (variables, constraints):
+	
+	arcs = set(constraints)
 	while arcs:
 		bc = arcs.pop()
-		if revise( bc ):
+		if revise(bc):
 			if len(bc.var1.domain) == 0:
 				return False
 
