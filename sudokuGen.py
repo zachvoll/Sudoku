@@ -1,3 +1,5 @@
+# Author: Zachary Vollen
+
 from copy import deepcopy
 import random
 
@@ -50,11 +52,12 @@ def AC3G (domains, boxes, constraints):
 
 
 #generates a random board given r,c,n,p
-def makeBoard(r, c, n, p):
+def makeBoard(r, c, p):
     board = []
     boxes = dict()
     domains = dict()
     rqfill = []
+    n = r*c
 
     #error checking
     if(r*c != n):
