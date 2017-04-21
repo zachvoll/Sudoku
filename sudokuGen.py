@@ -1,5 +1,8 @@
-# Author: Zachary Vollen
-
+'''
+Author: Zachary Vollen
+Used to generate Sudoku boards at random. 
+Tried an atypical approach of filling a board and gradually solving it.
+'''
 from copy import deepcopy
 import random
 
