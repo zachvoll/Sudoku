@@ -153,7 +153,7 @@ def backtrack(assignment, csp, inferType, pickType, count):
 #used for running experiments on sudoku
 def testSudoku(puzzle, r, c, p, size, infType, pickType):
 
-    init = Sudoku(puzzle, size, r, c)
+    init = Sudoku(puzzle, r, c)
     csp = init.setupCSP()
 
     newvars,cons = csp
