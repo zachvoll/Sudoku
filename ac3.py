@@ -39,6 +39,7 @@ def AC3 (variables, constraints):
 
 	return True
 
+#Forward Checking domain revision
 def FC (variables, constraints):
 	
 	arcs = set(constraints)
